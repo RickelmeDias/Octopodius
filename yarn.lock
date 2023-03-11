@@ -1456,7 +1456,7 @@
 
 "@tiptap/extension-code-block-lowlight@^2.0.0-beta.220":
   version "2.0.0-beta.220"
-  resolved "https://registry.npmjs.org/@tiptap/extension-code-block-lowlight/-/extension-code-block-lowlight-2.0.0-beta.220.tgz"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-code-block-lowlight/-/extension-code-block-lowlight-2.0.0-beta.220.tgz#9496a1989b5385872456f6910a43ac822b4896c1"
   integrity sha512-xMwbl5O50yaIGYQF3yrBM7Ft0JYejkuEo161jRElYG+PYvUCvbf2wB5oLNtRknj00WOM01kPXH2xMTuk8fTOPg==
 
 "@tiptap/extension-code-block@^2.0.0-beta.220":
@@ -1498,7 +1498,7 @@
 
 "@tiptap/extension-heading@^2.0.0-beta.220":
   version "2.0.0-beta.220"
-  resolved "https://registry.npmjs.org/@tiptap/extension-heading/-/extension-heading-2.0.0-beta.220.tgz"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-heading/-/extension-heading-2.0.0-beta.220.tgz#b4889de7b3f152ff88a119d6cb6a22537eff73a2"
   integrity sha512-7mrHRj++UaZ26C2Gjwb0WKWAzpiKb8TOYkVC2uMaCwaNhLDXpFEwZ7RtJRSTNBHkIGnMO46BH8Z0qlkFMmk9Jw==
 
 "@tiptap/extension-history@^2.0.0-beta.220":

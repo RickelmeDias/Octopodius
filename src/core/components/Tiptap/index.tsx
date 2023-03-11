@@ -1,12 +1,13 @@
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 
-import './styles/placeholder.scss'
 import './styles/tiptap.scss'
 
 import Placeholder from '@tiptap/extension-placeholder'
 import Document from '@tiptap/extension-document'
-import MenuBar from './MenuBar'
+import MenuBar from './components/MenuBar'
+import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight'
+import { PlaceholderConfig, CodeBlockConfig } from './configurations'
 
 function Tiptap() {
   const editor = useEditor({
@@ -23,18 +24,11 @@ function Tiptap() {
       StarterKit.configure({
         document: false,
         heading: {
-          levels: [1, 2],
+          levels: [1, 2, 3, 4],
         },
       }),
-      Placeholder.configure({
-        placeholder: ({ node }) => {
-          if (node.type.name === 'heading') {
-            return 'What is the title?'
-          }
-
-          return 'Write more here...'
-        },
-      }),
+      Placeholder.configure({ placeholder: PlaceholderConfig }),
+      CodeBlockLowlight.configure({ lowlight: CodeBlockConfig }),
     ],
   })
 

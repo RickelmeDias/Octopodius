@@ -1,4 +1,4 @@
-.ProseMirror p.is-editor-empty:first-child::before {
+.ProseMirror *.is-editor-empty:first-child::before {
     color: #adb5bd;
     content: attr(data-placeholder);
     float: left;
@@ -6,7 +6,7 @@
     pointer-events: none;
 }
 
-.ProseMirror p.is-empty::before {
+.ProseMirror *.is-empty::before {
     color: #adb5bd;
     content: attr(data-placeholder);
     float: left;

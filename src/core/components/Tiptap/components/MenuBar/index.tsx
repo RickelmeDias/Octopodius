@@ -2,7 +2,7 @@ import './MenuBar.scss'
 
 import React, { Fragment } from 'react'
 
-import MenuItem from './MenuItem'
+import MenuItem from '../MenuItem'
 
 function MenuBar({ editor }: any) {
   const items = [
@@ -25,18 +25,6 @@ function MenuBar({ editor }: any) {
       isActive: () => editor.isActive('strike'),
     },
     {
-      icon: 'code-view',
-      title: 'Code',
-      action: () => editor.chain().focus().toggleCode().run(),
-      isActive: () => editor.isActive('code'),
-    },
-    {
-      icon: 'mark-pen-line',
-      title: 'Highlight',
-      action: () => editor.chain().focus().toggleHighlight().run(),
-      isActive: () => editor.isActive('highlight'),
-    },
-    {
       type: 'divider',
     },
     {
@@ -50,6 +38,18 @@ function MenuBar({ editor }: any) {
       title: 'Heading 2',
       action: () => editor.chain().focus().toggleHeading({ level: 2 }).run(),
       isActive: () => editor.isActive('heading', { level: 2 }),
+    },
+    {
+      icon: 'h-3',
+      title: 'Heading 3',
+      action: () => editor.chain().focus().toggleHeading({ level: 3 }).run(),
+      isActive: () => editor.isActive('heading', { level: 3 }),
+    },
+    {
+      icon: 'h-4',
+      title: 'Heading 4',
+      action: () => editor.chain().focus().toggleHeading({ level: 4 }).run(),
+      isActive: () => editor.isActive('heading', { level: 4 }),
     },
     {
       icon: 'paragraph',
