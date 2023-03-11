@@ -97,7 +97,8 @@
   color: #0d0d0d;
   display: flex;
   flex-direction: column;
-  max-height: 26rem;
+  height: 100vh;
+  max-height: 100vh;
 
   &__header {
     align-items: center;
@@ -200,4 +201,30 @@
   top: -1.4em;
   user-select: none;
   white-space: nowrap;
+}
+
+
+// === Configuration Tasks ===
+
+ul[data-type="taskList"] {
+  list-style: none;
+  padding: 0;
+
+  p {
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+
+    >label {
+      flex: 0 0 auto;
+      margin-right: 0.5rem;
+      user-select: none;
+    }
+
+    >div {
+      flex: 1 1 auto;
+    }
+  }
 }

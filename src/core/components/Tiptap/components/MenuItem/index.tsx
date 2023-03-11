@@ -1,4 +1,4 @@
-import './MenuItem.scss'
+import './styles.scss'
 
 import remixiconUrl from 'remixicon/fonts/remixicon.symbol.svg'
 

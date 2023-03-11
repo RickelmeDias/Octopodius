@@ -1,10 +1,18 @@
-import './MenuBar.scss'
+import './styles.scss'
 
-import React, { Fragment } from 'react'
+import { Fragment, useCallback } from 'react'
 
 import MenuItem from '../MenuItem'
 
 function MenuBar({ editor }: any) {
+  const addImage = useCallback(() => {
+    const url = window.prompt('URL')
+
+    if (url) {
+      editor.chain().focus().setImage({ src: url }).run()
+    }
+  }, [editor])
+
   const items = [
     {
       icon: 'bold',
@@ -120,6 +128,13 @@ function MenuBar({ editor }: any) {
       icon: 'arrow-go-forward-line',
       title: 'Redo',
       action: () => editor.chain().focus().redo().run(),
+    },
+    {
+      icon: 'image-2-line',
+      title: 'Image',
+      action: () => {
+        addImage()
+      },
     },
   ]
 
