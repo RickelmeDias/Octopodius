@@ -1,4 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react'
+import Tiptap from '../core/components/Tiptap'
 
 function App() {
   return (
@@ -6,6 +7,8 @@ function App() {
       <Heading as="h1" color="brand.900">
         Hello World!
       </Heading>
+
+      <Tiptap />
       <Box color="gray.50" />
     </div>
   )
