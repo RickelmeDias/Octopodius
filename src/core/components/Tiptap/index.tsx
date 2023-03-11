@@ -39,8 +39,8 @@ function Tiptap() {
       Placeholder.configure({ placeholder: PlaceholderConfig }),
       CodeBlockLowlight.configure({ lowlight: CodeBlockConfig }),
       Dropcursor.configure({
-        color: '#ff0000',
-        width: 2,
+        color: '#000',
+        width: 1,
       }),
     ],
   })
