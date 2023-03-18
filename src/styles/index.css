@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*: {
+    boxsizing: 'border-box';
+}
+body: {
+    background: '#F5F8FA';
+    color: '#202020';
+    margin: 0;
+    padding: 0;
+    width: '100%';
+    minheight: '100vh';
+}
+html: {
+    margin: 0;
+    padding: 0;
+}
