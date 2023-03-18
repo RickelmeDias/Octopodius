@@ -1,18 +1,14 @@
-import Tiptap from '../core/components/Tiptap';
+import Tiptap from '../core/components/Tiptap'
 
 function App() {
-    return (
-        <div className="App">
-            {/* <Heading as="h1" color="brand.900">
-        Hello World!
-      </Heading>
-      <Heading as="h2" color="brand.900">
-        Hello World!
-      </Heading> */}
-
-            <Tiptap />
-        </div>
-    );
+  return (
+    <div className="App">
+      <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl focus:outline-none !important">
+        <h1>Hello World</h1>
+      </article>
+      <Tiptap />
+    </div>
+  )
 }
 
-export default App;
+export default App
