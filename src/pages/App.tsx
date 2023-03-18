@@ -1,20 +1,18 @@
-import { Box, Heading } from '@chakra-ui/react'
-import Tiptap from '../core/components/Tiptap'
+import Tiptap from '../core/components/Tiptap';
 
 function App() {
-  return (
-    <div className="App">
-      {/* <Heading as="h1" color="brand.900">
+    return (
+        <div className="App">
+            {/* <Heading as="h1" color="brand.900">
         Hello World!
       </Heading>
       <Heading as="h2" color="brand.900">
         Hello World!
       </Heading> */}
 
-      <Tiptap />
-      <Box color="gray.50" />
-    </div>
-  )
+            <Tiptap />
+        </div>
+    );
 }
 
-export default App
+export default App;
