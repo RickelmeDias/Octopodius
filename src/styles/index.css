@@ -13,7 +13,7 @@
     @apply text-2xl;
   }
   p {
-    @apply text-base;
+    @apply text-lg;
   }
 }
 

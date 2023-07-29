@@ -13,10 +13,18 @@ import TaskItem from '@tiptap/extension-task-item'
 import Image from '@tiptap/extension-image'
 import Dropcursor from '@tiptap/extension-dropcursor'
 import Paragraph from '@tiptap/extension-paragraph'
+import { Markdown } from 'tiptap-markdown'
+import { Dispatch, SetStateAction } from 'react'
 
-function Tiptap() {
+// import ReactMarkdown from 'react-markdown'
+type Props = {
+  setMarkdown: Dispatch<SetStateAction<any>>
+}
+
+function Tiptap(props: Props) {
   const editor = useEditor({
     extensions: [
+      Markdown,
       Document.extend({
         content: 'heading block*',
       }),
@@ -44,12 +52,18 @@ function Tiptap() {
         },
       }),
     ],
+    onUpdate: ({ editor }) => {
+      props.setMarkdown(editor.storage.markdown.getMarkdown())
+    },
   })
 
   return (
     <div className="editor">
       {editor && <MenuBar editor={editor} />}
       <EditorContent className="editor__content" editor={editor} />
+      {/* <div>
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+      </div> */}
     </div>
   )
 }
