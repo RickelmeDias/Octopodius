@@ -2,18 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-*: {
-    boxsizing: 'border-box';
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  p {
+    @apply text-base;
+  }
 }
-body: {
-    background: '#F5F8FA';
-    color: '#202020';
-    margin: 0;
-    padding: 0;
-    width: '100%';
-    minheight: '100vh';
+
+* {
+  boxsizing: 'border-box';
 }
-html: {
-    margin: 0;
-    padding: 0;
+
+body {
+  background: '#F5F8FA';
+  color: '#202020';
+  margin: 0;
+  padding: 0;
+  width: '100%';
+  minheight: '100vh';
+}
+
+html {
+  margin: 0;
+  padding: 0;
 }

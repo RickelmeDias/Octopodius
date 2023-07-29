@@ -1,11 +1,13 @@
 import Tiptap from '../core/components/Tiptap'
+import '../core/components/Tiptap/styles.scss'
 
 function App() {
   return (
     <div className="App">
-      <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl focus:outline-none !important">
+      <div className="ProseMirror">
         <h1>Hello World</h1>
-      </article>
+        <p>Teste</p>
+      </div>
       <Tiptap />
     </div>
   )

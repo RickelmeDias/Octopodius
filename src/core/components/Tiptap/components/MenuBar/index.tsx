@@ -54,12 +54,6 @@ function MenuBar({ editor }: any) {
       isActive: () => editor.isActive('heading', { level: 3 }),
     },
     {
-      icon: 'h-4',
-      title: 'Heading 4',
-      action: () => editor.chain().focus().toggleHeading({ level: 4 }).run(),
-      isActive: () => editor.isActive('heading', { level: 4 }),
-    },
-    {
       icon: 'paragraph',
       title: 'Paragraph',
       action: () => editor.chain().focus().setParagraph().run(),

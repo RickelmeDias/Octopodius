@@ -6,7 +6,7 @@ const PlaceholderConfig:
   | ((PlaceholderProps: { node: ProsemirrorNode }) => string)
   | undefined = ({ node }) => {
   if (node.type.name === 'heading') {
-    return 'Heading'
+    return 'Title'
   }
   return 'Write here...'
 }
